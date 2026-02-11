@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let suggestion of suggestions">
+    {{ suggestion.name }}
+    <button [routerLink]="[suggestion.id]">Details</button>
+  </li>
+</ul>
