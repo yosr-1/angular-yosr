@@ -1,6 +1,7 @@
+<h2>Suggestions List</h2>
 <ul>
   <li *ngFor="let suggestion of suggestions">
-    {{ suggestion.name }}
+    <strong>{{ suggestion.title }}</strong> - {{ suggestion.category }} ({{ suggestion.nbLikes }} likes)
     <button [routerLink]="[suggestion.id]">Details</button>
   </li>
 </ul>
