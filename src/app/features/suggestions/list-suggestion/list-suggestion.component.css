@@ -1,0 +1,104 @@
+.list-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.list-header h2 {
+  color: #333;
+  margin: 0;
+}
+
+.btn-add {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #357abd;
+}
+
+.suggestion-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestion-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.suggestion-info strong {
+  font-size: 15px;
+  color: #333;
+}
+
+.category {
+  font-size: 12px;
+  color: #777;
+}
+
+.status {
+  font-size: 12px;
+  color: #4a90e2;
+  font-weight: 600;
+}
+
+.suggestion-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.likes {
+  font-size: 13px;
+  color: #888;
+}
+
+.btn-details {
+  padding: 6px 14px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-details:hover {
+  background-color: #219a52;
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
