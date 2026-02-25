@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "name": "Bob Smith",
+      "email": "bob@gmail.com",
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Charlie Brown",
+      "email": "charlie@example.com"
+    },
+    {
+      "name": "yosr.lengliz",
+      "email": "lenglizyosr1@gmail.com",
+      "gender": "female",
+      "id": 4
+    }
+  ]
+}

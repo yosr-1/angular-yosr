@@ -1,0 +1,125 @@
+.users-card {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.users-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.users-card__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.users-card__header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.users-count {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.btn-add {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #16a34a;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background: #15803d;
+}
+
+.status {
+  margin: 8px 0 14px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.status--loading {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.status--error {
+  background: #fff1f2;
+  color: #be123c;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.users-table thead th {
+  background: #0f172a;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 600;
+  padding: 12px 14px;
+}
+
+.users-table tbody td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.users-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.btn-delete {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #dc2626;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: #b91c1c;
+}
+
+.btn-update {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.btn-update:hover {
+  background: #1d4ed8;
+}
+
+.empty-state {
+  text-align: center;
+  color: #64748b;
+  font-style: italic;
+}

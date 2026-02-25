@@ -1,6 +1,12 @@
-<nav>
-  <a routerLink="/home">Home</a> |
-  <a routerLink="/listSuggestion">Suggestions</a> |
-  <a routerLink="/suggestions">Suggestions (Lazy)</a> |
-  <a routerLink="/users">Users</a>
-</nav>
+<header class="app-header">
+  <div class="app-header__inner">
+    <a class="brand" routerLink="/home">Demo NS</a>
+
+    <nav class="nav-links">
+      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/listSuggestion" routerLinkActive="active">Suggestions</a>
+      <a routerLink="/suggestions" routerLinkActive="active">Suggestions (Lazy)</a>
+      <a routerLink="/users" routerLinkActive="active">Users</a>
+    </nav>
+  </div>
+</header>

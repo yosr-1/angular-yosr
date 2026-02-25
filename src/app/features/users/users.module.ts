@@ -5,14 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { UsersRoutingModule } from './users-routing.module';
 
 import { UsersComponent } from './users.component';
-import { UserListComponent } from './user-list/user-list.component';
-import { UserDetailsComponent } from './user-details/user-details.component';
+import { ListUsersComponent } from './list-users/list-users.component';
+import { AddUserComponent } from './add-user/add-user.component';
 
 @NgModule({
   declarations: [
     UsersComponent,
-    UserListComponent,
-    UserDetailsComponent
+    ListUsersComponent,
+    AddUserComponent
   ],
   imports: [
     CommonModule,

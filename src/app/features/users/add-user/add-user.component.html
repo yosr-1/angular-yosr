@@ -1,0 +1,38 @@
+<section class="add-user-card">
+  <h2>{{ isEdit ? 'Update User' : 'Add User' }}</h2>
+
+  <form (ngSubmit)="onSubmit()" #signupform="ngForm" class="add-user-form">
+    <label for="username">Username</label>
+    <input
+      id="username"
+      name="username"
+      type="text"
+      [(ngModel)]="username"
+      required
+      placeholder="Enter username"
+    />
+
+    <label for="mail">Mail</label>
+    <input
+      id="mail"
+      name="mail"
+      type="email"
+      [(ngModel)]="mail"
+      required
+      placeholder="Enter mail"
+    />
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender" [(ngModel)]="gender" required>
+      <option value="" disabled selected>Select gender</option>
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+    </select>
+
+    <div class="actions">
+      <button type="submit" [disabled]="signupform.invalid || isSubmitting">
+        {{ isEdit ? 'Update User' : 'Add User' }}
+      </button>
+    </div>
+  </form>
+</section>

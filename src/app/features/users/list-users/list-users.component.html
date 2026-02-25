@@ -1,0 +1,39 @@
+<section class="users-card">
+  <div class="users-card__header">
+    <h2>Users List</h2>
+    <div class="users-card__actions">
+      <span class="users-count">{{ users.length }} user(s)</span>
+      <button class="btn-add" routerLink="/users/add">Add User</button>
+    </div>
+  </div>
+
+  <p *ngIf="isLoading" class="status status--loading">Chargement des users...</p>
+  <p *ngIf="errorMessage" class="status status--error">{{ errorMessage }}</p>
+
+  <div class="table-wrapper">
+    <table class="table users-table">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Users</th>
+          <th scope="col">Mail</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>
+            <button class="btn btn-secondary btn-update" [routerLink]="['/users/update', user.id]">Update</button>
+            <button class="btn btn-danger btn-delete" (click)="deleteUser(user.id)">Delete</button>
+          </td>
+        </tr>
+        <tr *ngIf="!isLoading && users.length === 0">
+          <td colspan="4" class="empty-state">Aucun user trouvé.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
